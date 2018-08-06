@@ -37,3 +37,7 @@ be	done	by	pulling	your	docker	image	from	the	docker repository	and	running	the	
 |   Uttar-Pradesh   	|                9                	|
 |    Uttarakhand    	|                11               	|
 |    West-Bengal    	|                13               	|
+
+
+![geochart](https://user-images.githubusercontent.com/17880433/43722589-3a71f39c-99b3-11e8-9a86-b28be8b05617.png)
+
