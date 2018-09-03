@@ -1,6 +1,7 @@
 Page 1 – Home Page
 It has two options - One: Request for Help (Redirects to Page 2), Second one: Registered Requests
- 
+
+![screenshot from 2018-09-03 20-52-24](https://user-images.githubusercontent.com/17880433/44994233-4bc8dc00-afbb-11e8-85ee-fa0b92cdbfe5.png) 
 
 Page 2: “Request Submission form”
 It is form page which contains following fields
@@ -12,6 +13,8 @@ It is form page which contains following fields
     • Date (Automatically populated current date/time which is readonly)
 Store content of this form to AWS S3 when “Submit” button has been clicked 
 
+
+![screenshot from 2018-09-03 20-51-04](https://user-images.githubusercontent.com/17880433/44994198-250aa580-afbb-11e8-959a-4a3d722aeda7.png)
 
 
 Page 3: “Registered Requests”
