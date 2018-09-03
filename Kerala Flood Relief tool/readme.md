@@ -1,7 +1,7 @@
 Page 1 – Home Page
 It has two options - One: Request for Help (Redirects to Page 2), Second one: Registered Requests
 
-![screenshot from 2018-09-03 20-52-24](https://user-images.githubusercontent.com/17880433/44994233-4bc8dc00-afbb-11e8-85ee-fa0b92cdbfe5.png) 
+![index redirection](https://user-images.githubusercontent.com/17880433/44994233-4bc8dc00-afbb-11e8-85ee-fa0b92cdbfe5.png) 
 
 Page 2: “Request Submission form”
 It is form page which contains following fields
