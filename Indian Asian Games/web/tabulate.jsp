@@ -32,6 +32,9 @@
             }
             );
         </script>
+        
+       
+
 
     </head>
     <body>
@@ -41,7 +44,7 @@
             String readFilePath = "/home/ryuuk/Academic/Cloud Computing/AWS/aws.data";
 
             //AWS Code Start -->
-            BasicAWSCredentials creds = new BasicAWSCredentials("AKIAJ4OJ4KRMFHBQWIKQ", "UDqEoTR2zBR9KEsoJDz9xJHfmnlvLzSVhQhCET9b");
+            BasicAWSCredentials creds = new BasicAWSCredentials("AKIAI7BLSBSIG5GUHQ4Q", "AwpEOVXt54Z1PEeeGtVjhPwhNoXwF10ONxF9qBAD");
             String bucketName = "ryuuk-asian-games";
             String path = readFilePath;
             String foldername = "medalsbysport";
@@ -85,7 +88,8 @@
                     %>
             </tbody>
         </table>
-        <script>
+            
+             <script>
             window.onload = function () {
 
                 var chart = new CanvasJS.Chart("chartContainer", {
@@ -98,20 +102,30 @@
                             startAngle: 240,
                             yValueFormatString: "##0.00\"%\"",
                             indexLabel: "{label} {y}",
+                             
                             dataPoints: [
-                                {y: 79.45, label: "Google"},
-                                {y: 7.31, label: "Bing"},
-                                {y: 7.06, label: "Baidu"},
-                                {y: 4.91, label: "Yahoo"},
-                                {y: 1.26, label: "Others"}
-                            ]
+                                <%
+                    for (int i = 0; i < userList.size(); i++) {
+                        User temp = userList.get(i);
+                %>
+                                {y: <%=temp.total%>, label: "<%=temp.sport%>"},
+                            
+                            <%
+                        }
+
+                    %>
+                                            
+                                            ]
                         }]
                 });
                 chart.render();
 
             }
         </script>
-
+        
+        
+        <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+        
         <script>
             function sortTable(n) {
                 var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
