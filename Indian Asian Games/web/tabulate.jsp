@@ -44,7 +44,7 @@
             String readFilePath = "/home/ryuuk/Academic/Cloud Computing/AWS/aws.data";
 
             //AWS Code Start -->
-            BasicAWSCredentials creds = new BasicAWSCredentials("AKIAI7BLSBSIG5GUHQ4Q", "AwpEOVXt54Z1PEeeGtVjhPwhNoXwF10ONxF9qBAD");
+            BasicAWSCredentials creds = new BasicAWSCredentials("", "");
             String bucketName = "ryuuk-asian-games";
             String path = readFilePath;
             String foldername = "medalsbysport";
