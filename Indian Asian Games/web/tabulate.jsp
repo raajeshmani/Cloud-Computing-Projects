@@ -63,9 +63,6 @@
             <thead>
                 <tr>
                     <th onclick="sortTable(0)">Sport</th>
-                    <th>Gold</th>
-                    <th>Silver</th>
-                    <th>Bronze</th>
                     <th onclick="sortTable(1)">Total</th>
                 </tr>
             </thead>
