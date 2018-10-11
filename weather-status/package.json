@@ -1,0 +1,17 @@
+{
+  "name": "weather-status",
+  "version": "1.0.0",
+  "description": "To find the weather of a particular city with weather api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ryuuk_Shinigami",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "ejs": "^2.6.1",
+    "express": "^4.15.3",
+    "request": "^2.81.0"
+  }
+}
