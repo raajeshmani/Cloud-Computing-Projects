@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://getbootstrap.com/docs/4.1/dist/css/bootstrap.min.css">
+
+    <title>Student Registry</title>
+    <link rel="icon" href="http://www.chartjs.org/samples/latest/favicon.ico">
+    <!-- Custom styles for floating template -->
+    <link href="https://getbootstrap.com/docs/4.1/examples/floating-labels/floating-labels.css" rel="stylesheet">
+    <link rel="https://getbootstrap.com/docs/4.1/examples/starter-template/starter-template.css" href="stylesheet">
+  </head>
+  <body class = "text-center">
+
+    <%
+        if(!toUpdate){
+            firstNameVal="";
+            lastNameVal="";
+            enrollmentDateVal="";
+        }
+
+        else{
+
+        }
+    %>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="/">Student Registry</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/display">Display</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="/contact">Contact</a>
+          </li>
+
+        </ul>
+        <form name="Search" class="form-inline my-2 my-lg-0" action="/search" method="POST">
+          <input class="form-control mr-sm-2" type="text" name="searchq" placeholder="Search" aria-label="Search">
+
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+
+        <form name="Create" class="form-signin" action="/insert" method="POST">
+          <div class="container" id="create">
+            <div class="form-inline">
+                <label class="control-label col-lg-2" for="firstName">First_Name </label>
+                <div class="col-lg-6">
+                    <input type="text" name="firstName" id="firstname" class="form-control" value="<%=firstNameVal%>" placeholder="Enter FirstName" required>
+                </div>
+            </div>
+            <br>
+            <div class="form-inline">
+                <label class="control-label col-lg-2" for="lastName">Last_Name </label>
+                <div class="col-sm-6">
+                    <input type="text" name="lastName" id="lastName" class="form-control" value="<%=lastNameVal%>" placeholder="Enter LastName" required>
+                </div>
+            </div>
+            <br>
+            <div class="form-inline">
+                <label class="control-label col-lg-2" for="enrollmentDate">Enroll_Date </label>
+                <div class="col-lg-6">
+                    <input type="date" name="enrollmentDate" id="enrollmentdate" class="form-control" value="<%=enrollmentDateVal%>" required>
+                </div>
+            </div>
+            <br>
+            <div class="">
+
+            </div>
+            <button type="submit" class="btn btn-sm btn-primary ">Submit</button>
+            <a href="/display" class="btn btn-sm btn-default ">Display</a>
+            </div>
+        </form>
+
+
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+        <script src="../../assets/js/vendor/popper.min.js"></script>
+        <script src="../../dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
