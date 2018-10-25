@@ -13,3 +13,25 @@ This performs CRUD operations assisted with Search functionality
 ![display](https://user-images.githubusercontent.com/17880433/47513974-fa431c00-d89c-11e8-84f1-fa86ee3b1f3e.png)
 
 **INSTALLATION INSTRUCTIONS**
+
+Initializing ...
+
+	npm init
+	
+Install the required dependencies
+
+	npm install [depds]
+
+OR use this if package.json file has dependencies in it already
+
+	npm install 
+	
+	
+Start MongoDB Service
+	
+	sudo systemctl start mongodb.service
+	
+Start Nodemon
+	
+	nodemon server.js
+	
